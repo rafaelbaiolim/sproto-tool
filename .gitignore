@@ -18,7 +18,6 @@ luac.out
 *.pch
 
 # Libraries
-*.lib
 *.a
 *.la
 *.lo
@@ -27,7 +26,6 @@ luac.out
 
 # Shared objects (inc. Windows DLLs)
 *.dll
-*.so
 *.so.*
 *.dylib
 
