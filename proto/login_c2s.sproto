@@ -1,0 +1,49 @@
+handshake 1 {
+	response {
+		msg 0  : string
+	}
+}
+
+login_role 2 {
+	request {
+		uid 0 : string
+		token 1 : string
+		serverId 2 : integer
+	}
+	response {
+		roleIds 2 : *integer
+	}
+}
+
+get_role 3 {
+    request  {
+        roleId 0 : integer
+    }
+	response Role
+}
+
+create_role 4 {
+	request {
+		myrole 0 : Role
+	}
+	response {
+		ok 0 : boolean
+	}
+}
+
+
+add_person 5 {
+	request {
+		addInfo 0 : Person
+	}
+	response {
+		ok 0 : boolean
+	}
+}
+
+get_addressbook 6 {
+	response {
+		addressbooks 0 : AddressBook
+	}
+}
+

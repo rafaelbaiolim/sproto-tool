@@ -1,0 +1,4 @@
+.package {
+	type 0 : integer    #请求方法是一个唯一的数字
+	session 1 : integer #session是必须的且一个请求唯一的
+}
